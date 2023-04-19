@@ -1,0 +1,144 @@
+/* Bootstrap styles */
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css');
+
+/* Custom styles */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #8b8b8b;
+}
+
+h1 {
+    margin: 35px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#add-task-box {
+    /* display: flex;
+    flex-direction: row; */
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: calc(100% - 40px);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+  
+#add-task-box input[type="text"],
+#add-task-box select {
+    /* flex: 5; */
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+  
+#add-task-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+#clear-all-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #6d6864;
+    color: white;
+    cursor: pointer;
+}
+
+#clear-all-btn:hover {
+    background-color: #3b3b3a;
+}
+
+#add-task-btn:hover {
+    background-color: #2e6b30;
+}
+  
+
+.task-list-container {
+  background-color: #d1c179;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 10px 25px;
+  padding-top: 1px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.completed-task-list-container {
+    /* display: none; */
+    background-color: #6e6a57;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px 25px;
+    padding-top: 15px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.completed-task-list-container h2 {
+  text-align: center;
+}
+
+.task-list-container h2 {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list label{
+    margin-left: 15px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+li.completed label {
+    text-decoration: line-through;
+}
+
+.task:last-of-type {
+  border-bottom: none;
+}
+
+.task .description {
+  flex-grow: 1;
+}
+
+.task .actions {
+  margin-left: 1rem;
+}
+
+.task .actions button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.task .actions button:hover {
+  text-decoration: underline;
+}
