@@ -3,7 +3,7 @@ function addNewTask() {
   
   const taskList = document.getElementById('task-list');
 
-  // Get the values of the task and priority input fields
+  // Declaracion de variables
   const taskInput = document.getElementById('task');
   const priorityInput = document.getElementById('priority');
   const task = taskInput.value;
@@ -85,8 +85,6 @@ function showCompletedTasks() {
   event.preventDefault();
   var completedTaskListContainer = document.getElementById("completed-task-list-container");
   var button = document.getElementById("show-completed-tasks-button");
-
-  const hiddenTaskList = document.getElementById('completed-task-list');
 
   if (completedTaskListContainer.style.display === "none") {
     completedTaskListContainer.style.display = "block";
